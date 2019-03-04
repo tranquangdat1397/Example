@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.5.9/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.5.9/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=vietnamese'
+    rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo-icon" id="header-sub">
+                    <a href="#">
+                        <img src="https://static.edumall.vn/assets/logo_branding/logo_ngang_full-2f1fc30412218bed474aa39b6468079db0195cbd32cb1f215f6e4fae0ee0f688.svg">
+                    </a>
+                </div>  
+                <div class="search-course" id="header-sub">
+                    <form action="#">
+                        <input type="text" placeholder="Tìm kiếm khóa học ngay" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="notify" id="header-sub">
+                    <div class="store-icon" id="notify-sub">
+                        <a href="#"><img src="images/empty-cart-icon.svg"></a>
+                    </div>
+                    <div class="like-icon" id="notify-sub">
+                        <a href="#"><img src="images/heart-icon.svg"></a>
+                    </div>
+                    <div class="notify__notify-icon" id="notify-sub">
+                        <a href="#">
+                            <img src="images/notify-icon.svg">
+                            <span><p>99</p></span>
+                        </a> 
+                    </div>
+                </div>
+                <div class="account" id="header-sub">
+                    <div class="Oval-2">
+                        <a href="#"><img src="images/image.jpeg"></a>
+                    </div>
+                    <div class="name-account"><a href="#">Tran Dat</a></div>
+                    <div class="rectangle-6">
+                        <a href="#"><img src="images/rectangle-6.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapper-2">
+                <div class="list">
+                    <a href="#">
+                        <ul>
+                            <li><p>Danh mục</p></li>
+                            <li><img src="images/rectangle-2.svg"></li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="unblock-course">
+                    <a href="#">
+                        <ul>
+                            <li><img src="images/unblock-course.svg"></li>
+                            <li>Kích hoạt khóa học</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="my-course">
+                    <a href="#">
+                        <ul>
+                            <li><img src="images/my-course.svg"></li>
+                            <li>Khóa học của tôi</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="deal">
+                    <a href="#">
+                        <ul>
+                            <li><img src="images/deal.svg"></li>
+                            <li>Deal chớp nhoáng</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="sales">
+                    <a href="#">
+                        <ul>
+                            <li><img src="images/sales.svg"></li>
+                            <li>Khuyến mại</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mainbody">
+        <div class="container">
+            <div class="mainbody__wrapper">
+                <div class="mainbody__wrapper__top">
+                    <div class="general">
+                        <ul>
+                            <li><p>Trang chủ</p></li>
+                            <li><p> > </p></li>
+                            <li><p>Giỏ hàng</p></li>
+                        </ul>
+                    </div>
+                    <div class="general__course">
+                        <ul>
+                            <li><h5>Gio hang</h5></li>
+                            <li><p>(5 khoa hoc)</p></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="mainbody__wrapper__bottom">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <div id="left-img">
+                                    <a href="#"><img src="images/left-1.jpg"></a>
+                                </div>
+                                <div id="text-general">
+                                    <a href="#" class="text-1">
+                                        <p>Advertsing On A Budget Part3</p>
+                                        <p>Frequency Frequency Frequency</p>
+                                    </a>
+                                    <a href="#" class="text-2">Raymond Moss</a>
+                                </div>
+                                <div id="top"><a href="#">699.000 <u>d</u></a></div>
+                                <div id="top"><a href="#"><img src="images/delete-disabled.svg"></a></div>
+                            </li>
+                            <li>
+                                <div id="left-img">
+                                    <a href="#"><img src="images/left-2.jpg"></a>
+                                </div>
+                                <div id="text-general">
+                                    <a href="#" class="text-1">
+                                        <p>Advertsing On A Budget Part3</p>
+                                        <p>Frequency Frequency Frequency</p>
+                                    </a>
+                                    <a href="#" class="text-2">Raymond Moss</a>
+                                </div>
+                                <div id="top">
+                                    <a href="#"><p style="color: red;">299.000 <u>d</u></p></a>
+                                    <a href="#"><p style="color: #9b9b9b; text-decoration: line-through;
+                                        font-size: 12px;">699.000 <u>d</u></p></a>
+                                </div>
+                                <div id="top"><a href="#"><img src="images/delete-disabled.svg"></a></div>
+                            </li>
+                            <li>
+                                <div id="left-img">
+                                    <a href="#"><img src="images/left-3.jpg"></a>
+                                </div>
+                                <div id="text-general">
+                                    <a href="#" class="text-1">
+                                        <p>Advertsing On A Budget Part3</p>
+                                        <p>Frequency Frequency Frequency</p>
+                                    </a>
+                                    <a href="#" class="text-2">Raymond Moss</a>
+                                </div>
+                                <div id="top"><a href="#">699.000 <u>d</u></a></div>
+                                <div id="top"><a href="#"><img src="images/delete-disabled.svg"></a></div>
+                            </li>
+                            <li>
+                                <div id="left-img">
+                                    <a href="#"><img src="images/left-4.jpg"></a>
+                                </div>
+                                <div id="text-general">
+                                    <a href="#" class="text-1">
+                                        <p>Advertsing On A Budget Part3</p>
+                                        <p>Frequency Frequency Frequency</p>
+                                    </a>
+                                    <a href="#" class="text-2">Raymond Moss</a>
+                                </div>
+                                <div id="top">
+                                    <a href="#"><p style="color: red;">199.000 <u>d</u></p></a>
+                                    <a href="#"><p style="color: #9b9b9b; text-decoration: line-through;
+                                        font-size: 12px;">399.000 <u>d</u></p></a>
+                                </div>
+                                <div id="top"><a href="#"><img src="images/delete-disabled.svg"></a></div>
+                            </li>
+                            <li>
+                                <div id="left-img">
+                                    <a href="#"><img src="images/left-5.jpg"></a>
+                                </div>
+                                <div id="text-general">
+                                    <a href="#" class="text-1">
+                                        <p>Advertsing On A Budget Part3</p>
+                                        <p>Frequency Frequency Frequency</p>
+                                    </a>
+                                    <a href="#" class="text-2">Raymond Moss</a>
+                                </div>
+                                <div id="top"><a href="#">699.000 <u>d</u></a></div>
+                                <div id="top"><a href="#"><img src="images/delete-disabled.svg"></a></div>
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="right__info"><p>Thông tin đơn hàng</p></div>
+                        <div class="right__pay">
+                            <div class="cal-temp">
+                                <ul>
+                                    <li><p>Tạm tính</p></li>
+                                    <li style="margin-left: 206px;"><p style="color: #464646;">0<u>d</u></p></li>
+                                </ul>
+                            </div>
+                            <div class="total">
+                                <ul>
+                                    <li><p style="color: #464646;">Tổng</p></li>
+                                    <li style="margin-left: 235px;"><p style="color: red;">0<u>d</u></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right__form-purchase">
+<!--                             <p>MUACHUNG</p>
+                            <p>Áp dụng</p> -->
+                                <ul>
+                                    <li class="buy-toget"><p>MUACHUNG</p></li>
+                                    <li class="apply"><p>Áp dụng</p></li>
+                                </ul>
+                            
+                        </div>
+                        <div class="right__sales"><p>Ma giam gia khong hop le hoac het han</p></div>
+                        <div class="right__button-buy">
+                            <button type="submit">Tien hanh dat mua</button>
+                        </div>
+                        <div class="right__other-info">
+                            <ul>
+                                <li>
+                                    <div><img src="images/percentage.svg"></div>
+                                    <div id="sales-s"><p>Giam 5% khi thanh toan online</p></div>
+                                </li>
+                                <li>
+                                    <div><img src="images/car.svg"></div>
+                                    <div id="sales-s"><p>Mien phi giao hang</p></div>
+                                </li>
+                                <li>
+                                    <div><img src="images/circle-arrow.svg"></div>
+                                    <div id="sales-s"><p>Hoan hoc phi theo chinh sach 30 ngay</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
